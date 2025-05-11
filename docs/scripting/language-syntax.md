@@ -325,7 +325,7 @@ print_every_item inventory:
 
 print_inventory_item index:
   var item $data.player.inventory[$index]
-  "You have a %{item}"
+  "You have a %{$item}"
   add index 1
   if (< $index $data.player.inventory.length):
     run print_inventory $index
