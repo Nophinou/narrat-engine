@@ -333,6 +333,10 @@ print_inventory_item index:
 
 The script above goes through every item in the inventory one by one and prints them.
 
+::: tip
+Note that just like in Javscript, the `.length` property is available by default.
+:::
+
 ### Array commands
 
 There are various available commands for arrays, see them [in the commands reference](../commands/all-commands.md#arrays).
