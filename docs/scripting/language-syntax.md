@@ -334,7 +334,7 @@ print_inventory_item index:
 The script above goes through every item in the inventory one by one and prints them.
 
 ::: tip
-Note that just like in Javscript, the `.length` property is available by default.
+Note that just like in Javscript, the `.length` property is available by default; checking our iteration of the `print_inventory_item` function against the array's length and not against `$data.player.inventory[$index]` being `undefined` makes sure our loop doesn't break if there are `undefined` values in the array. 
 :::
 
 ### Array commands
