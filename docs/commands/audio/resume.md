@@ -6,7 +6,7 @@ The `resume` function resumes an audio channel
 
 See [playing audio](../../features/audio.md) for more info on how to setup the audio system
 
-Syntax: `$play [mode] [channel (optional)]`
+Syntax: `play [mode] [channel (optional)]`
 
 - mode: `music` , `ambiant` or `sound`
 - channel: A number indicating which channel to resume. Defaults to 0. Can be used to play multiple musics in parallel on the same mode

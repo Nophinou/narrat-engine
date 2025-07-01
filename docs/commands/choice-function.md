@@ -25,7 +25,7 @@ choice_example:
 
 ### Choice with conditions or skill rolls
 
-Choices can have conditions on them to control whether they should appear. Adding a condition to a choice is done by using the `$if` syntax at the end of the line with the condition of your choice. If the condition is true the choice will appear, otherwise it won't.
+Choices can have conditions on them to control whether they should appear. Adding a condition to a choice is done by using the `if` syntax at the end of the line with the condition of your choice. If the condition is true the choice will appear, otherwise it won't.
 
 It is also possible to make options roll a skill check and then branch on success or failure. The syntax is:
 
