@@ -325,13 +325,17 @@ print_every_item inventory:
 
 print_inventory_item index:
   var item $data.player.inventory[$index]
-  "You have a %{item}"
+  "You have a %{$item}"
   add index 1
   if (< $index $data.player.inventory.length):
     run print_inventory $index
 ```
 
 The script above goes through every item in the inventory one by one and prints them.
+
+::: tip
+Note that just like in Javscript, the `.length` property is available by default; checking our iteration of the `print_inventory_item` function against the array's length and not against `$data.player.inventory[$index]` being `undefined` makes sure our loop doesn't break if there are `undefined` values in the array. 
+:::
 
 ### Array commands
 
